@@ -34,7 +34,13 @@ Options are optional and should be based on [NekR/offline-plugin](https://github
 
 ```
 if (process.env.NODE_ENV === 'production') {
-  const options = {};
+  const options = {
+      // my options
+  };
   require('razzle-plugin-offline/lib/serviceWorker')(options);
 }
 ```
+
+# License
+
+[MIT](./LICENSE)
