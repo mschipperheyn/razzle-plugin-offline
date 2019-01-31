@@ -1,6 +1,8 @@
 {
   "name": "razzle-plugin-offline",
   "version": "0.0.1-alpha.1",
+  "url": "https://github.com/mschipperheyn/razzle-plugin-offline",
+  "author": "Marc Schipperheyn",
   "main": "lib/razzle-plugin-offline.cjs.js",
   "module": "lib/razzle-plugin-offline.esm.js",
   "scripts": {
