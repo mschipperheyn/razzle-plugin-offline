@@ -22,5 +22,8 @@
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "dependencies": {
+    "offline-plugin": "^5.0.6"
   }
 }

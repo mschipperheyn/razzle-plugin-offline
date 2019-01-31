@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "offline-plugin": "^5.0.6",
     "razzle": "^3.0.0-alpha.2",
     "razzle-plugin-offline": "file:../",
     "react": "^16.7.0",

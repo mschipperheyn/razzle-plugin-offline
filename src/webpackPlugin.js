@@ -10,7 +10,7 @@ function myRazzlePlugin(config, env, webpack, options) {
     const defaultOptions = {
       excludes: ['**/*.map'],
       updateStrategy: 'changed',
-      autoUpdate: 1000 * 60 * 5,
+      autoUpdate: true,
       externals: ['/', '/assets.json', 'static/*'],
       caches: {
         main: ['/', ':rest:']

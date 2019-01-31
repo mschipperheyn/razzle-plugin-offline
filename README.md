@@ -4,7 +4,7 @@ Adds a [NekR/offline-plugin](https://github.com/NekR/offline-plugin) servicework
 
 ## Installation
 
-`yarn add -D razzle-plugin-offline`
+`yarn add razzle-plugin-offline`
 
 ## Configuration
 
@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === 'production') {
 
 ```
 
-## Adding serviceWorker options
+## Adding client side serviceWorker options
 
 Options are optional and should be based on [NekR/offline-plugin](https://github.com/NekR/offline-plugin/blob/master/docs/options.md)
 
@@ -39,6 +39,20 @@ if (process.env.NODE_ENV === 'production') {
   };
   require('razzle-plugin-offline/lib/serviceWorker')(options);
 }
+```
+
+## Adding server side webpack plugin options
+
+```
+// razzle.config.js
+module.exports = {
+  plugins: [{
+      name:'offline',
+      options: {
+          autoUpdate: true
+      }
+  }],
+};
 ```
 
 # License
