@@ -1,0 +1,26 @@
+{
+  "name": "razzle-plugin-offline",
+  "version": "0.0.1-alpha",
+  "main": "lib/razzle-plugin-offline.cjs.js",
+  "module": "lib/razzle-plugin-offline.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "razzle": "^2.4.x - 3.0.x || >= 3.0.0-alpha.2 < 3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  }
+}
