@@ -8,6 +8,9 @@ function myRazzlePlugin(config, env, webpack, options) {
     console.log('Adding service worker');
 
     const defaultOptions = {
+      excludes: ['**/*.map'],
+      updateStrategy: 'changed',
+      autoUpdate: 1000 * 60 * 5,
       externals: ['/', '/assets.json', 'static/*'],
       caches: {
         main: ['/', ':rest:']
