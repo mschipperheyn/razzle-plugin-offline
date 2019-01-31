@@ -1,6 +1,6 @@
 import OfflinePlugin from 'offline-plugin';
 
-function myRazzlePlugin(config, env, webpack, options) {
+function serviceWorkerPlugin(config, env, webpack, options) {
   const { target, dev } = env;
 
   if (target === 'web' && !dev) {
@@ -29,4 +29,4 @@ function myRazzlePlugin(config, env, webpack, options) {
   return config;
 }
 
-export default myRazzlePlugin;
+export default serviceWorkerPlugin;
