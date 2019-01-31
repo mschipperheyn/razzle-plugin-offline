@@ -6,11 +6,20 @@ function myRazzlePlugin(config, env, webpack, options) {
   if (target === 'web' && !dev) {
     // client production only
     console.log('Adding service worker');
+
+    const defaultOptions = {
+      externals: ['/', '/assets.json', 'static/*'],
+      caches: {
+        main: ['/', ':rest:']
+      },
+      ServiceWorker: {
+        events: true
+      }
+    };
+
     config.plugins = [
       ...config.plugins,
-      new OfflinePlugin({
-        events: true
-      })
+      new OfflinePlugin(Object.assign({}, defaultOptions, options))
     ];
   }
 
